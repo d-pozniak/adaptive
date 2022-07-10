@@ -14,7 +14,7 @@ body {
     margin: 48px auto 120px;
   }
 }
-@media (max-width: 549px), (max-height: 440px) {
+@media (max-width: 549px) {
   .page-container {
     max-width: 1024px;
     margin: 48px auto 120px;
@@ -41,11 +41,11 @@ body {
 }
 .page-container .gallery .slick-dots li > button {
   color: transparent;
-  background-color: white;
   border-radius: 50%;
   border: 1px solid #005BBB;
   background-color: white;
   height: 20px;
+  width: 20px;
 }
 .page-container .gallery .slick-dots li.slick-active > button {
   background-color: #005BBB;
@@ -68,7 +68,7 @@ body {
     font-size: 24px;
   }
 }
-@media (max-width: 549px), (max-height: 440px) {
+@media (max-width: 549px) {
   .page-container .descr-container .history .intro-history {
     font-size: 16px;
   }
@@ -96,7 +96,7 @@ body {
 .page-container .descr-container .history .history-block .history-column .highlighted {
   font-size: 48px;
 }
-@media (max-width: 549px), (max-height: 440px) {
+@media (max-width: 549px) {
   .page-container .descr-container .history .history-block .history-column .highlighted {
     font-size: 24px;
   }
@@ -116,7 +116,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 549px), (max-height: 440px) {
+@media (max-width: 549px) {
   .page-container .descr-container .history .history-block .history-column {
     font-size: 16px;
     margin-bottom: 0;
@@ -124,16 +124,30 @@ body {
 }
 .page-container .descr-container .contact .contact-form {
   border: 1px solid #005BBB;
-  padding: 30px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #005BBB;
+}
+@media only screen and (max-width: 1023px) {
+  .page-container .descr-container .contact .contact-form {
+    flex-direction: column;
+    border: none;
+  }
 }
 .page-container .descr-container .contact .contact-form .message-field {
   border: none;
   font-size: 18px;
   color: #005BBB;
   opacity: 0.5;
+  margin: 30px;
+}
+@media only screen and (max-width: 1023px) {
+  .page-container .descr-container .contact .contact-form .message-field {
+    text-align: center;
+    padding: 20px 20px 100px;
+    border: 1px solid #005BBB;
+    margin: 0 0 15px;
+    width: 100%;
+  }
 }
 .page-container .descr-container .contact .contact-form .send-button {
   font-size: 28px;
@@ -141,6 +155,12 @@ body {
   color: white;
   background-color: #005BBB;
   border-style: none;
+  margin: 30px;
+}
+@media only screen and (max-width: 1023px) {
+  .page-container .descr-container .contact .contact-form .send-button {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

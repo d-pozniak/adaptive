@@ -12,7 +12,7 @@ body{
     max-width: 1024px;
     margin: 48px auto 120px;
   }
-  @media (max-width: 549px),(max-height: 440px){
+  @media (max-width: 549px){
     max-width: 1024px;
     margin: 48px auto 120px;
   }
@@ -42,11 +42,11 @@ body{
           margin-right: 16px;
           >button{
             color: transparent;
-            background-color: white;
             border-radius: 50%;
             border: 1px solid #005BBB;
             background-color: white;
             height: 20px;
+            width: 20px;
           }
           &.slick-active{
             >button{
@@ -70,7 +70,7 @@ body{
         @media (max-width: 1199px){
           font-size: 24px;
         }
-        @media (max-width: 549px),(max-height: 440px){
+        @media (max-width: 549px){
           font-size: 16px;
         }
 
@@ -93,7 +93,7 @@ body{
           align-items: center;
           .highlighted{
             font-size: 48px;
-            @media (max-width: 549px),(max-height: 440px){
+            @media (max-width: 549px){
               font-size: 24px;
             }
           }
@@ -110,7 +110,7 @@ body{
             width: 100%;
             margin-bottom: 20px;
           }
-          @media (max-width: 549px),(max-height: 440px){
+          @media (max-width: 549px){
             font-size: 16px;
             margin-bottom: 0;
           }
@@ -120,15 +120,28 @@ body{
     .contact{
       .contact-form{
         border: 1px solid #005BBB;
-        padding: 30px;
         display: flex;
         justify-content: space-between;
-        border: 1px solid #005BBB;
+        //padding: 30px;
+        @media only screen
+        and (max-width: 1023px){
+          flex-direction: column;
+          border: none;
+        }
         .message-field{
           border: none;
           font-size: 18px;
           color: #005BBB;
           opacity: 0.5;
+          margin: 30px;
+          @media only screen
+          and (max-width: 1023px){
+            text-align: center;
+            padding: 20px 20px 100px;
+            border: 1px solid #005BBB;
+            margin: 0 0 15px;
+            width: 100%;
+          }
         }
         .send-button{
           font-size: 28px;
@@ -136,6 +149,11 @@ body{
           color: white;
           background-color: #005BBB;
           border-style: none;
+          margin: 30px;
+          @media only screen
+          and (max-width: 1023px){
+            margin: 0;
+          }
         }
       }
     }
