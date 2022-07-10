@@ -103,3 +103,17 @@ li{
     }
 }
 
+/* Mob */
+@media only screen and (max-width: 769px){
+    .gallery img{
+        margin:0;
+        width: 100%;
+    }
+}
+
+/* Tab */
+@media only sreen
+       and (max-width: 1199px){
+
+}
+
