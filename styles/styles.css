@@ -14,16 +14,36 @@ body {
     margin: 48px auto 120px;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 425px) {
   .page-container {
     margin: 0 0 120px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .page-container .header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 912px;
+    margin: 0 auto 80px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .page-container .header-container {
+    position: absolute;
+    z-index: 1;
+    right: 0;
   }
 }
 .page-container .header-container .logo {
   display: flex;
   justify-content: center;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1199px) {
+  .page-container .header-container .logo {
+    margin: 0 auto 0 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
   .page-container .header-container .logo {
     display: none;
   }
@@ -45,6 +65,118 @@ body {
   margin: 0 40px;
   font-size: 20px;
 }
+.page-container .header-container .btn-burger {
+  background-color: white;
+  display: none;
+}
+@media only screen and (max-width: 1199px) {
+  .page-container .header-container .btn-burger {
+    margin: 0 10px 0 auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .page-container .header-container .btn-burger {
+    margin-top: 20px;
+    background-color: transparent;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(33deg) brightness(105%) contrast(222%);
+  }
+}
+.page-container .header-container .dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #005BBB;
+  height: 60vh;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .page-container .header-container .dropdown {
+    height: 100vh;
+  }
+}
+.page-container .header-container .dropdown .upper-container {
+  width: 86%;
+  margin: auto auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-container .header-container .dropdown .upper-container .btn-close {
+  background-color: #005BBB;
+}
+.page-container .header-container .dropdown .nav {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+.page-container .header-container .dropdown .nav .mobile-nav-item {
+  text-decoration: none;
+  color: white;
+  margin: 0 40px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .page-container .header-container .dropdown .nav .mobile-nav-item {
+    margin-top: 48px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-container .header-container .dropdown .nav {
+    flex-direction: column;
+    margin-top: 48px;
+    align-self: flex-start;
+  }
+}
+.page-container .header-container .dropdown .contact {
+  width: 86%;
+  margin: 0 auto auto;
+}
+.page-container .header-container .dropdown .contact .contact-form {
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 767px) {
+  .page-container .header-container .dropdown .contact .contact-form {
+    flex-direction: column;
+    border: none;
+  }
+}
+.page-container .header-container .dropdown .contact .contact-form .message-field {
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: #005BBB;
+  opacity: 0.5;
+  margin: 30px;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .page-container .header-container .dropdown .contact .contact-form .message-field {
+    text-align: center;
+    padding: 20px 20px 100px;
+    border: 1px solid white;
+    margin: 0 0 15px;
+  }
+}
+.page-container .header-container .dropdown .contact .contact-form .send-button {
+  font-size: 28px;
+  padding: 13px 56px;
+  color: #005BBB;
+  background-color: white;
+  border-style: none;
+  margin: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .page-container .header-container .dropdown .contact .contact-form .send-button {
+    margin: 0;
+  }
+}
 .page-container .gallery .slick-dots li {
   margin-right: 16px;
 }
@@ -58,6 +190,16 @@ body {
 }
 .page-container .gallery .slick-dots li.slick-active > button {
   background-color: #005BBB;
+}
+@media only screen and (max-width: 767px) {
+  .page-container .gallery .slick-dots li {
+    width: 8px;
+    height: 8px;
+  }
+  .page-container .gallery .slick-dots li > button {
+    width: 8px;
+    height: 8px;
+  }
 }
 .page-container .descr-container {
   max-width: 1024px;
@@ -77,7 +219,7 @@ body {
     font-size: 24px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .page-container .descr-container .history .intro-history {
     font-size: 16px;
   }
@@ -105,7 +247,7 @@ body {
 .page-container .descr-container .history .history-block .history-column .highlighted {
   font-size: 48px;
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .page-container .descr-container .history .history-block .history-column .highlighted {
     font-size: 24px;
   }
@@ -125,7 +267,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .page-container .descr-container .history .history-block .history-column {
     font-size: 16px;
     margin-bottom: 0;
@@ -136,7 +278,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   .page-container .descr-container .contact .contact-form {
     flex-direction: column;
     border: none;
@@ -150,7 +292,7 @@ body {
   margin: 30px;
   width: 100%;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   .page-container .descr-container .contact .contact-form .message-field {
     text-align: center;
     padding: 20px 20px 100px;
@@ -166,10 +308,18 @@ body {
   border-style: none;
   margin: 30px;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   .page-container .descr-container .contact .contact-form .send-button {
     margin: 0;
   }
+}
+
+.menu-open {
+  display: flex !important;
+}
+
+.menu-closed {
+  display: none !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

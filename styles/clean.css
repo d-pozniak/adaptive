@@ -51,7 +51,7 @@ li{
     }
 }
 
-@media (max-width: 549px) {
+@media (max-width: 767px) {
     .subtitle{
         font-size: 20px;
     }
@@ -73,7 +73,7 @@ li{
     content: '';
 }
 
-@media (max-width: 769px){
+@media (max-width: 767px){
    .subtitle-container::after {
         width: 100%;
     }
@@ -97,23 +97,9 @@ li{
     padding: 40px 0 80px;
 }
 
-@media (max-width: 549px){
+@media (max-width: 767px){
     .slick-dots {
         padding: 24px 0 48px;
     }
-}
-
-/* Mob */
-@media only screen and (max-width: 769px){
-    .gallery img{
-        margin:0;
-        width: 100%;
-    }
-}
-
-/* Tab */
-@media only sreen
-       and (max-width: 1199px){
-
 }
 
