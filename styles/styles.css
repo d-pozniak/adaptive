@@ -99,6 +99,12 @@ body {
     height: 100vh;
   }
 }
+@media only screen and (max-width: 851px) and (orientation: landscape) {
+  .page-container .header-container .dropdown {
+    height: 100vh;
+    position: absolute;
+  }
+}
 .page-container .header-container .dropdown .upper-container {
   width: 86%;
   margin: auto auto 0;
@@ -190,16 +196,6 @@ body {
 }
 .page-container .gallery .slick-dots li.slick-active > button {
   background-color: #005BBB;
-}
-@media only screen and (max-width: 767px) {
-  .page-container .gallery .slick-dots li {
-    width: 8px;
-    height: 8px;
-  }
-  .page-container .gallery .slick-dots li > button {
-    width: 8px;
-    height: 8px;
-  }
 }
 .page-container .descr-container {
   max-width: 1024px;

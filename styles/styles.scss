@@ -88,6 +88,11 @@ body{
       @media only screen and (max-width: 767px) {
         height: 100vh;
       }
+      @media only screen and (max-width: 851px)
+      and (orientation: landscape){
+        height: 100vh;
+        position: absolute;
+      }
       .upper-container{
         width: 86%;
         margin: auto auto 0;
@@ -174,15 +179,6 @@ body{
             >button{
               background-color: #005BBB;
             }
-          }
-          @media only screen
-          and (max-width: 767px){
-            >button{
-              width: 8px;
-              height: 8px;
-            }
-            width: 8px;
-            height: 8px;
           }
         }
       }
